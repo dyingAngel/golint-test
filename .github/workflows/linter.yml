@@ -3,7 +3,7 @@ name: Linter
 on:
   push:
     branches:
-      - 'BIT-1998**'
+      - 'master'
 
 jobs:
 
