@@ -43,7 +43,8 @@ func getQuestionAnswer(input chan string) {
 	for {
 		in := bufio.NewReader(os.Stdin)
 		result, err := in.ReadString('\n')
-		result = strings.Replace(result, "\n", "", -1)
+		// result = strings.Replace(result, "\n", "", -1)
+		result = strings.ReplaceAll(result, "\n", "")
 		if err != nil {
 			fmt.Println(err)
 		}
