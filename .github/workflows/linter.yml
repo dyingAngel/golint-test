@@ -22,6 +22,7 @@ jobs:
         # Need to reset? the GOROOT if using actions/setup-go@v1
         # GOROOT:
         ACTIONS_RUNNER_DEBUG: true
+        LOG_LEVEL: TRACE
         VALIDATE_GO: true
         DEFAULT_BRANCH: master
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
